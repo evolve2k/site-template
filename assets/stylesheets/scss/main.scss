@@ -1,7 +1,7 @@
 @import "modules/all";
 
-.flex {
-	display: flexbox;
+.container {
+	@include flexbox;
 }
 
 div {
@@ -33,9 +33,12 @@ div {
 	background-color: green;
 }
 
-.main article > div {
-	width: 250px;
-	display: flex;
+.main > article > div {
+	background-color: yellow;
+	display: block;
+	flex-flow: row;
+	align-items: center;
+	justify-content: center;
 }
 
 .main > aside {
